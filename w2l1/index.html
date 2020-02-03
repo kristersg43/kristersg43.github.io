@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table width=100%>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Weekly schedule</th>
+        </tr>
+        <tr>
+            <th colspan="2">Time table</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8AM</td>
+            <td rowspan="2">5PM</td>
+            <td>Introduction</td>
+        </tr>
+        <tr>
+            <td>Setup</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8AM</td>
+            <td>11M</td>
+            <td rowspan="2">Git basics</td>
+        </tr>
+        <tr>
+            <td>11AM</td>
+            <td>2PM</td>
+        </tr>
+
+        <tr>
+            <td>2PM</td>
+            <td>5PM</td>
+            <td rowspan="1">HTML tags</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8PM</td>
+            <td>12PM</td>
+            <td>HTML atributes</td>
+        </tr>
+    </table>
+    <br>
+    <div>First name: <input type="text"></div>
+    <div>Last name: <input type="text"></div>
+    <div>Email: <input type="text" placeholder="youremail@mail.com"></div>
+    <div>Age (in full years): <input type="number"></div>
+    <div>Country: <select country="country">
+            <option value="Latvia">Latvia</option>
+            <option value="Estonia">Estonia</option>
+        </select>
+    </div>
+    <div>Description:<textarea name=""></textarea></div>
+    <div>I am enjoying this:
+        <input type="radio" checked>Yes</input>
+        <input type="radio">No</input>
+    </div>
+    <div><button type="button">Save</button></div>
+    <div><a href="Text link Nr.1">Links1</a></div>
+    <div><a href="Text link Nr.2">Links2</a></div>
+
+</body>
+
+<ul>
+    <li>Order list 1st item
+        <ol>
+           <li>Pirmais</li>
+           <li>Otrais</li>
+           <li>Trešais</li></ol>
+    <li>Order list 2nd item</li>
+    <ol>
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li></ol>
+</ul>
+
+<img src="data:image/png;base64,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" alt="">
+<img src="" alt="img cant be loaded">
+</html>
