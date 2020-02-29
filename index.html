@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Title of the document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-The content of the document Github folder
+  <div class="d-flex p-2 bd-highlight">
+    <div id="sidebar-form">
+
+      <form class="m-2">
+        <div class="form-group text-white">
+          <small><label for="exampleInputEmail1">Username</label></small>
+          <input id="username" type="text" class="form-control"placeholder="@">
+        </div>
+        <div class="form-group text-white">
+          <small><label for="exampleInputPassword1">E-mail</label></small>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder=".com">
+        </div>
+
+        <div class="form-check text-white">
+          <small><label class="form-check-label">
+              <input type="checkbox" id="services" onclick="Enableddl(this)" class="form-check-input">Sign up for our
+              newsletter</label>
+          </small>
+        </div>
+
+        <div class="pt-md-2">
+          <select id="DDL" disabled="disabled" class="form-control form-control-sm">
+            <option value="" selected disabled>Send me special offers using</option>
+            <option>Email</option>
+            <option>Text messaging</option>
+          </select>
+        </div>
+      </form>
+    
+      <button id="entry" class="btn btn-primary ml-2 mt-3">Submit</button>
+      
+  
+
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="triggerNav()">☰ Form</button>
+    </div>
+  </div>
+
+
+  <table class="table table-sm table-dark table-bordered">
+    <thead>
+      <tr>
+        <th scope="col"><small>
+            <p class="text-center">#</p>
+          </small></th>
+        <th scope="col"><small>
+            <p class="text-center">Username</p>
+          </small></th>
+        <th scope="col"><small>
+            <p class="text-center">E-mail</p>
+          </small></th>
+        <th scope="col"><small>
+            <p class="text-center">Special Offers</p>
+          </small></th>
+        <th scope="col"><small>
+            <p class="text-center">Communication Platform</p>
+          </small></th>
+      </tr>
+    </thead>
+    <!-- <tbody>
+        <tr>
+          <th scope="row"><small><p class="text-center">1</p></small></th>
+          <td><small><p class="text-center">Mark</p></small></td>
+          <td><small><p class="text-center">Otto@otto.com</p></small></td>
+          <td><small><p class="text-center">yes</p></small></td>
+          <td><small><p class="text-center">EEmail</p></small></td>
+        </tr>
+        <tr>
+          <th scope="row"><small><p class="text-center">2</p></small></th>
+          <td><small><p class="text-center">Mark</p></small></td>
+          <td><small><p class="text-center">Otto@otto.com</p></small></td>
+          <td><small><p class="text-center">yes</p></small></td>
+          <td><small><p class="text-center">EEmail</p></small></td>
+        </tr>
+        <tr>
+          <th scope="row"><small><p class="text-center">3</p></small></th>
+          <td><small><p class="text-center">Mark</p></small></td>
+          <td><small><p class="text-center">Otto@otto.com</p></small></td>
+          <td><small><p class="text-center">yes</p></small></td>
+          <td><small><p class="text-center">EEmail</p></small></td>
+        </tr>
+        <tr>
+          <th scope="row"><small><p class="text-center">4</p></small></th>
+          <td><small><p class="text-center">Mark</p></small></td>
+          <td><small><p class="text-center">Otto@otto.com</p></small></td>
+          <td><small><p class="text-center">yes</p></small></td>
+          <td><small><p class="text-center">EEmail</p></small></td>
+        </tr>
+        <tr>
+          <th scope="row"><small><p class="text-center">5</p></small></th>
+          <td><small><p class="text-center">Mark</p></small></td>
+          <td><small><p class="text-center">Otto@otto.com</p></small></td>
+          <td><small><p class="text-center">yes</p></small></td>
+          <td><small><p class="text-center">EEmail</p></small></td>
+        </tr>
+        
+      </tbody> -->
+  </table>
+
 </body>
 
 </html>

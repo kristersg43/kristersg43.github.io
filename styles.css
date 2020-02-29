@@ -1,0 +1,53 @@
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+#sidebar-form {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(48, 48, 48);
+    overflow-x: hidden;
+    transition: 0.5s;
+ 
+}
+  
+#sidebar-form .openbtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    font-size: 14px;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+.table {
+  margin-top: 24px;
+  margin-left: 30px;
+  width: 40%;
+  background-color: #303030;
+}
+
+tr {
+  height: 1px;
+}
