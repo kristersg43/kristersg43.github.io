@@ -1,0 +1,11 @@
+
+.table-wrapper {
+    padding: 0;
+    height: 64px;
+}
+
+.table {
+    padding: .5rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+}
